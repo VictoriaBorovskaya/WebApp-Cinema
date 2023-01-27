@@ -61,7 +61,7 @@ export function drawAddModal(object) {
                 }</span></p>
                 <p class="hidden">${object.imdbID}</p>
             </div>
-            <div class="flex gap-5 pt-10">
+            <div class="flex flex-col sm:flex-row gap-5 pt-10">
                 <button class="button py-2 hover:bg-neutral-900" id="button-close">Close</button>
                 ${
                     isCollection
