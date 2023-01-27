@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Cinema</title>
+        <link rel="icon" type="image/png" href="/images/icon-cinema.png" />
+        <link rel="stylesheet" href="/src/styles.css" />
+        <script type="module" src="/src/js/collection.js"></script>
+    </head>
+
+    <body>
+        <div
+            class="bg-[url('/images/header-image.jpg')] w-full bg-neutral-700 bg-blend-multiply"
+        >
+            <div
+                class="max-w-5xl m-auto px-2 py-5 h-full flex flex-col justify-between"
+            >
+                <div
+                    class="h-10 flex justify-between items-center mb-48 md:mb-60"
+                >
+                    <a
+                        href="./index.html"
+                        class="text-red-600 font-bold text-3xl md:text-5xl"
+                        >CINEMA</a
+                    >
+                    <div
+                        class="bg-red-600 text-white text-xl md:text-2xl rounded px-5 py-1 flex items-center transition hover:scale-110 hover:duration-700 cursor-pointer"
+                    >
+                        <a href="./collection.html">Collection</a>
+                        <img
+                            src="/images/icon-collection.png"
+                            class="w-9 h-8 pl-1"
+                        />
+                    </div>
+                </div>
+                <h1
+                    class="text-white text-3xl md:text-5xl font-bold text-center mb-12"
+                >
+                    Your collection of movies and series
+                </h1>
+                <p class="text-xl md:text-2xl text-white text-center mb-2">
+                    Enter the name of the movie to start searching the
+                    collection
+                </p>
+                <div class="flex justify-center items-center mb-12">
+                    <div class="w-3/5 relative">
+                        <input
+                            class="h-12 rounded-l w-full outline-none px-2 border border-red-600 py-1 text-lg md:text-xl pl-10 border-l-2"
+                            placeholder="Movie search"
+                            id="input-collection"
+                        />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6 absolute text-neutral-500 left-0 top-3 ml-2 cursor-pointer"
+                            id="delete-input"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                            />
+                        </svg>
+                    </div>
+                    <button
+                        class="h-12 bg-red-600 rounded-r text-white px-10 text-xl md:text-2xl pb-1"
+                        id="button-search-collection"
+                    >
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="bg-black border-b-8 border-neutral-700"
+            id="movie-container"
+        >
+            <div
+                class="max-w-5xl m-auto px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-5 min-h-[300]"
+                id="movie-list-collection"
+            ></div>
+        </div>
+
+        <div
+            class="bg-neutral-900/75 fixed top-0 left-0 right-0 bottom-0 hidden justify-center items-center"
+            id="add-modal"
+        >
+            <div
+                class="bg-neutral-900 p-10 w-2/3 xl:w-3/5 rounded"
+                id="add-modal-content"
+            ></div>
+        </div>
+
+        <div class="bg-black">
+            <div class="max-w-5xl m-auto px-2 text-neutral-500">
+                <p class="py-8 text-base md:text-lg">
+                    Questions? Call 0000-000-0000
+                </p>
+                <div
+                    class="flex flex-col sm:flex-row justify-between pb-12 gap-2 sm:gap-0"
+                >
+                    <a class="hover:underline cursor-pointer">Terms of Use</a>
+                    <a class="hover:underline cursor-pointer"
+                        >Cookie Preferences</a
+                    >
+                    <a class="hover:underline cursor-pointer">Help Center</a>
+                    <a class="hover:underline cursor-pointer">Contact Us</a>
+                    <a class="hover:underline cursor-pointer">Privacy</a>
+                </div>
+                <p class="pb-12 text-end">2022–2023 © CINEMA</p>
+            </div>
+        </div>
+    </body>
+</html>

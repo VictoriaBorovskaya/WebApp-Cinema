@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Cinema</title>
+        <link rel="icon" type="image/png" href="/images/icon-cinema.png" />
+        <link rel="stylesheet" href="/src/styles.css" />
+        <script type="module" src="/src/js/index.js"></script>
+    </head>
+    <body>
+        <div
+            class="bg-[url('/images/header-image.jpg')] w-full bg-neutral-700 bg-blend-multiply"
+        >
+            <div
+                class="max-w-5xl m-auto px-2 py-5 h-full flex flex-col justify-between"
+            >
+                <div
+                    class="h-10 flex justify-between items-center mb-48 md:mb-60"
+                >
+                    <a
+                        href="./index.html"
+                        class="text-red-600 font-bold text-3xl md:text-5xl"
+                        >CINEMA</a
+                    >
+                    <div
+                        class="bg-red-600 text-white text-xl md:text-2xl rounded px-5 py-1 flex items-center transition hover:scale-110 hover:duration-700 cursor-pointer"
+                    >
+                        <a href="/src/html/collection.html" id="collection-link"
+                            >Collection</a
+                        >
+                        <img
+                            src="/images/icon-collection.png"
+                            class="w-9 h-8 pl-1"
+                        />
+                    </div>
+                </div>
+                <h1
+                    class="text-white text-3xl md:text-5xl font-bold text-center mb-12"
+                >
+                    Online library of movies and series
+                </h1>
+                <p class="text-xl md:text-2xl text-white text-center mb-2">
+                    Enter the title of the movie to start searching
+                </p>
+                <div class="flex justify-center items-center mb-12">
+                    <input
+                        class="h-12 rounded-l w-3/5 outline-none px-2 border border-red-600 py-1 text-lg md:text-xl"
+                        placeholder="Movie search"
+                        id="input"
+                    />
+                    <button
+                        class="h-12 bg-red-600 rounded-r text-white px-10 text-xl md:text-2xl pb-1"
+                        id="button-search"
+                    >
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="bg-black border-b-8 border-neutral-700"
+            id="movie-container"
+        >
+            <div
+                class="max-w-5xl m-auto px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-5"
+                id="movie-list"
+            ></div>
+        </div>
+
+        <div
+            class="bg-neutral-900/75 fixed top-0 left-0 right-0 bottom-0 hidden justify-center items-center"
+            id="add-modal"
+        >
+            <div
+                class="bg-neutral-900 p-10 w-4/5 xl:w-3/5 rounded"
+                id="add-modal-content"
+            ></div>
+        </div>
+
+        <div class="bg-black border-b-8 border-neutral-700">
+            <div
+                class="max-w-5xl m-auto px-2 flex flex-col sm:flex-row justify-between items-center"
+            >
+                <div class="text-white w-2/3 sm:w-1/2 text-center pt-5">
+                    <p class="text-2xl md:text-4xl font-bold pb-4">
+                        Learn more about your favorite movies
+                    </p>
+                    <p class="text-lg md:text-2xl font-semibold">
+                        CINEMA - wikipedia in the world of movies and series
+                    </p>
+                </div>
+                <div class="sm:py-5 sm:pl-5 scale-90 sm:scale-100">
+                    <img src="/images/tv-image-2.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-black border-b-8 border-neutral-700">
+            <div
+                class="max-w-5xl m-auto px-2 flex flex-col-reverse sm:flex-row justify-between items-center"
+            >
+                <div class="sm:py-5 sm:pr-5 scale-90 sm:scale-100">
+                    <img src="/images/tv-image-1.png" />
+                </div>
+                <div class="text-white w-2/3 sm:w-1/2 text-center pt-5">
+                    <p class="text-2xl md:text-4xl font-bold pb-4">
+                        Create your own movie collection
+                    </p>
+                    <p class="text-lg md:text-2xl font-semibold">
+                        Save watched or liked movies and series
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-black">
+            <div class="max-w-5xl m-auto px-2 text-neutral-500">
+                <p class="py-8 text-base md:text-lg">
+                    Questions? Call 0000-000-0000
+                </p>
+                <div
+                    class="flex flex-col sm:flex-row justify-between pb-12 gap-2 sm:gap-0"
+                >
+                    <a class="hover:underline cursor-pointer">Terms of Use</a>
+                    <a class="hover:underline cursor-pointer"
+                        >Cookie Preferences</a
+                    >
+                    <a class="hover:underline cursor-pointer">Help Center</a>
+                    <a class="hover:underline cursor-pointer">Contact Us</a>
+                    <a class="hover:underline cursor-pointer">Privacy</a>
+                </div>
+                <p class="pb-12 text-end">2022–2023 © CINEMA</p>
+            </div>
+        </div>
+    </body>
+</html>

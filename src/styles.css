@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+    @apply bg-red-600 text-white text-base sm:text-lg md:text-xl rounded w-full border-2 border-red-600 duration-700;
+}
+
+.text-modal {
+    @apply font-normal text-base sm:text-lg md:text-xl text-red-300 py-1 text-justify;
+}
+
+.text-span {
+    @apply text-neutral-200 font-semibold;
+}
+
+@media (max-width: 767px) {
+    #movie-list {
+        padding: 50px 100px;
+        gap: 30px;
+    }
+
+    #movie-list-collection {
+        padding: 50px 100px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 639px) {
+    #movie-list {
+        padding: 50px 170px;
+        gap: 30px;
+    }
+
+    #movie-list-collection {
+        padding: 50px 170px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 585px) {
+    #modal-container {
+        flex-direction: column;
+    }
+
+    #movie-list {
+        padding: 50px 150px;
+        gap: 30px;
+    }
+
+    #movie-list-collection {
+        padding: 50px 150px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 535px) {
+    #movie-list {
+        padding: 50px 120px;
+        gap: 30px;
+    }
+
+    #movie-list-collection {
+        padding: 50px 120px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 479px) {
+    #movie-list {
+        padding: 50px 90px;
+    }
+
+    #movie-list-collection {
+        padding: 50px 90px;
+    }
+}
+
+@media (max-width: 425px) {
+    #movie-list {
+        padding: 50px 70px;
+    }
+
+    #movie-list-collection {
+        padding: 50px 70px;
+    }
+}
+
+@media (max-width: 375px) {
+    #movie-list {
+        padding: 50px 40px;
+    }
+
+    #movie-list-collection {
+        padding: 50px 40px;
+    }
+}
