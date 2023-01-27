@@ -14,7 +14,7 @@ export function drawAddModal(object) {
     modal.innerHTML = ""
     modal.innerHTML += `
             <div class="flex justify-between" id="modal-container">
-                <div class="w-2/3 flex flex-col justify-between">
+                <div class="w-2/3 flex flex-col justify-between" id="modal-container-content">
                     <p class="font-bold text-2xl md:text-4xl text-red-500 pb-5 text-center">${
                         object.Title
                     }</p>

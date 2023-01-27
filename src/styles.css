@@ -52,6 +52,10 @@
         padding: 50px 150px;
         gap: 30px;
     }
+
+    #modal-container-content {
+        width: 100%;
+    }
 }
 
 @media (max-width: 535px) {

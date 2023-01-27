@@ -29,7 +29,7 @@ function drawCollection(arr) {
                 poster = "/images/movie-poster.png"
             }
             list.innerHTML += `
-                <div class="relative border-2 border-red-600 rounded my-8 flex flex-col justify-between movies-container" id="movie-container">
+                <div class="relative border-2 border-red-600 rounded sm:my-8 flex flex-col justify-between movies-container" id="movie-container">
                 <div>
                     <img src="${poster}" class="w-full h-80 object-cover object-center text-white font-semibold text-lg text-center leading-10" alt="Unfortunately the movie poster is not displayed :(" />
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 absolute top-2 left-2 text-red-600 hover:text-white" id="remove-movie-${movie.imdbID}">

@@ -57,7 +57,7 @@ function drawCard(arr) {
         }
 
         movieList.innerHTML += `
-            <div class="relative border-2 border-red-600 rounded my-8 flex flex-col justify-between" id="movie-container">
+            <div class="relative border-2 border-red-600 rounded sm:my-8 flex flex-col justify-between" id="movie-container">
                 <div>
                     <img src="${poster}" class="w-full h-80 object-cover object-center text-white font-semibold text-lg text-center leading-10" alt="Unfortunately the movie poster is not displayed :(" />
                     ${
